@@ -1,0 +1,53 @@
+<div id="page" class="container-fluid">
+  <div class="row">
+    <div class="col col-12">
+      <main id="formContact" class="container mb-3 mt-4 p-3 shadow shadow-md" style="background-color: rgb(255, 201, 0) ; width: 800px ;">
+        <h1 class="text text-bold">Nous contacter</h1>
+        <p>Merci de compléter le formulaire suivant pour nous contacter.</p>
+        <p>Tous les champs de ce formulaire sont requis.</p>
+        <form id="frmContact" name="frmContact" class="text-start">
+          <div>
+            <div class="container sm">
+              <div class="d-flex w-50 justify-content-between">
+                <label for="fName">Nom</label>
+                <input type="text" name="fNom" id="fNom" placeholder="Votre Nom" value="text" required />
+              </div>
+              <div class="d-flex w-50 justify-content-between">
+                <label for="pNom">Prénom</label>
+                <input type="text" name="pNom" id="pNom" placeholder="Votre Prénom" value="text" required />
+              </div>
+            </div>
+            <div class="container sm text-start">
+              <div class="d-flex w-50 justify-content-between">
+                <label for="email">Votre e-mail</label>
+                <input type="email" name="email" id="email" placeholder="tonEmail@nav.fr" required />
+              </div>
+              <div class="d-flex w-50 justify-content-between">
+                <label for="tel">Téléphone:</label>
+                <input type="phone" id="tel" name="tel"
+                  pattern="[0-10]{10}" placeholder="0123456789"
+                  required>
+              </div>
+            </div>
+            <div>
+              <div class="container sm ">
+                <label for="message"></label>
+                <textarea name="message" id="message" class="d-flex w-50 " placeholder="Votre message"></textarea>
+              </div>
+            </div>
+            <button name="btnContact" id='btnContact' class="btn btn-sm ms-3 mt-3 btn-outline-dark rounded text text-warning" type="submit"
+              style="background-color: rgb(8, 110, 125);">Envoyer</button>
+        </form>
+      </main>
+      <!--Ici se termine le #pageContent-->
+      <div name="photosP" id="photosP" class="d-flex justify-content-center">
+        <img src="/projet/img/06.jpg" alt="Plat italien" name="platIt" id="platIt" class="img-thumbnail" />
+        <img src="/projet/img/08.jpg" alt="Plat italien" name="platIt" id="platIt" class="img-thumbnail " />
+        <img src="/projet/img/10.jpg" alt="Plat italien" name="platIt" id="platIt" class="img-thumbnail " />
+        <img src="/projet/img/03.jpg" alt="Plat italien" name="platIt" id="platIt" class="img-thumbnail " />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/contact.js"></script>

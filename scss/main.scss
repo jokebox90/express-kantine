@@ -1,0 +1,22 @@
+// Point d'entrée Sass
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "fonts";
+@import "colors";
+
+#page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $light;
+}
+
+.carousel-image-portait {
+  height: 100%;
+  width: auto;
+  margin: auto;
+}
+
+.carousel-image-paysage {
+  height: auto;
+  width: 100%;
+  margin: auto;
+}

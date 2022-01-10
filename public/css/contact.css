@@ -1,0 +1,30 @@
+:root {
+  --jaune: rgb(255, 248, 154);
+  --jauneClaire: rgb(255, 201, 0);
+  --bleuCanard: rgb(8, 110, 125);
+  --vertDeau: rgb(26, 95, 122);
+  --white: #FFFFFF;
+  --black: #333333;
+  box-sizing: border-box;
+}
+/*
+puis en mettant la couleur
+color: var(--couleur);
+*/
+
+#formContact{
+  width: 60px;
+}
+
+textarea{
+  resize: none;
+}
+
+body{
+  background-color: (--jauneClaire);
+}
+
+textarea{
+  display: flex;
+  resize: none;
+}
