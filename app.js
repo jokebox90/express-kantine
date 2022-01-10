@@ -1,42 +1,39 @@
 const fs = require('fs')
 const express = require('express')
-const exphbs = require('express-handlebars')
+const nunjucks = require('nunjucks')
 
 const app = express()
 
 const port = 8888
 const description = 'Kantine De Pasta'
 
-const hbs = exphbs.create({
-  defaultLayout: 'base',
-  extname: '.hbs'
-})
-
-app.engine('hbs', hbs.engine)
-app.set('view engine', 'hbs')
+nunjucks.configure('views', {
+  autoescape: true,
+  express: app
+});
 
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.render('accueil', {
+  res.render('accueil.html', {
     title: `${description} // Accueil`
   });
 });
 
 app.get('/boissons', (req, res) => {
-  res.render('boissons', {
+  res.render('boissons.html', {
     title: `${description} // Boissons`
   });
 });
 
 app.get('/contact', (req, res) => {
-  res.render('contact', {
+  res.render('contact.html', {
     title: `${description} // Contact`
   });
 });
 
 app.get('/reservation', (req, res) => {
-  res.render('reservation', {
+  res.render('reservation.html', {
     title: `${description} // Réservation`
   });
 });
